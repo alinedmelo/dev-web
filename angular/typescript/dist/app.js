@@ -44,14 +44,21 @@ var Pessoa = (function () {
         this.carro = carro;
     };
     Pessoa.prototype.dizerCarroQueTem = function () {
-        this.carro;
+        return this.carro;
     };
     return Pessoa;
 }());
 var carroA = new Carro('Ford GT', 2);
-var carroB = new Carro('Escapade', 4);
+var carroB = new Carro('Renegade', 4);
 var carroC = new Carro('Onix', 4);
 var carroD = new Carro('Fit', 4);
 var listaDeCarros = [carroA, carroB, carroC, carroD];
 var concessionaria = new Concessionaria('Av. Paulista', listaDeCarros);
-console.log(concessionaria);
+var cliente = new Pessoa('Aline', 'Renegade');
+console.log(cliente);
+concessionaria.mostrarListaCarros().map(function (carro) {
+    if (carro['modelo'] == cliente.dizerCarroPreferido()) {
+        cliente.comprarCarro(carro);
+    }
+});
+console.log(cliente.dizerCarroQueTem());
