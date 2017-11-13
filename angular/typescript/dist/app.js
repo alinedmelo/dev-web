@@ -17,13 +17,15 @@ var Carro = (function () {
     return Carro;
 }());
 var Concessionaria = (function () {
-    function Concessionaria(endereco) {
+    function Concessionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
+        this.listaDeCarros = listaDeCarros;
     }
     Concessionaria.prototype.fornecerEndereco = function () {
         return this.endereco;
     };
     Concessionaria.prototype.mostrarListaCarros = function () {
+        return this.listaDeCarros;
     };
     return Concessionaria;
 }());
@@ -46,6 +48,10 @@ var Pessoa = (function () {
     };
     return Pessoa;
 }());
-var concessionaria = new Concessionaria('Av tiradentes');
-var pessoa = new Pessoa('Aline Dias', 'Mustang');
-console.log(pessoa.nome);
+var carroA = new Carro('Ford GT', 2);
+var carroB = new Carro('Escapade', 4);
+var carroC = new Carro('Onix', 4);
+var carroD = new Carro('Fit', 4);
+var listaDeCarros = [carroA, carroB, carroC, carroD];
+var concessionaria = new Concessionaria('Av. Paulista', listaDeCarros);
+console.log(concessionaria);
