@@ -27,5 +27,25 @@ var Concessionaria = (function () {
     };
     return Concessionaria;
 }());
+var Pessoa = (function () {
+    function Pessoa(nome, carroPreferido) {
+        this.nome = nome;
+        this.carroPreferido = carroPreferido;
+    }
+    Pessoa.prototype.dizerNome = function () {
+        return 'Nome: ' + this.nome;
+    };
+    Pessoa.prototype.dizerCarroPreferido = function () {
+        return this.carroPreferido;
+    };
+    Pessoa.prototype.comprarCarro = function (carro) {
+        this.carro = carro;
+    };
+    Pessoa.prototype.dizerCarroQueTem = function () {
+        this.carro;
+    };
+    return Pessoa;
+}());
 var concessionaria = new Concessionaria('Av tiradentes');
-console.log(concessionaria);
+var pessoa = new Pessoa('Aline Dias', 'Mustang');
+console.log(pessoa.nome);
