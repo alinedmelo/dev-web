@@ -1,15 +1,25 @@
-/* Inferência de tipos
-Permite definir o tipo de valores recebidos pelas variáveis
-tornando o JS uma linguagem fortemente tipada e evitando erros e sobreposição de valores
-*/
+class Carro {
+    // Parâmetros do abjeto
+    private modelo: string
+    private numeroDePortas: number
+    private velocidade: number = 0
 
-let mensagem: string = 'Seja bem vinda!'
-let numCursos: number = 10
-let estudando: boolean = true
+    //Construtor da classe = recebe os parâmetros
+    constructor(modelo: string, numeroDePortas: number) {
 
-// Declarando a tipagem de arrays
-let listaFrutas: Array<string> = ['Melão', 'Banana', 'Uva']
-let listaFrutas2: string[] = ['Melão', 'Banana', 'Uva']
+        this.modelo = modelo
+        this.numeroDePortas = numeroDePortas
+    }
 
-let listaNotas: Array<number> = [6, 8, 10]
-let listaNotas2: number[] = [6, 8, 10]
+    //Métodos da classe
+    public acelerar (): void {
+        this.velocidade = this.velocidade + 10
+    }
+    public parar(): void {
+        this.velocidade = 0
+    }
+    public velocidadeAtual(): number {
+        return this.velocidade
+    }
+
+}

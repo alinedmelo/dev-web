@@ -1,8 +1,18 @@
 "use strict";
-var mensagem = 'Seja bem vinda!';
-var numCursos = 10;
-var estudando = true;
-var listaFrutas = ['Melão', 'Banana', 'Uva'];
-var listaFrutas2 = ['Melão', 'Banana', 'Uva'];
-var listaNotas = [6, 8, 10];
-var listaNotas2 = [6, 8, 10];
+var Carro = (function () {
+    function Carro(modelo, numeroDePortas) {
+        this.velocidade = 0;
+        this.modelo = modelo;
+        this.numeroDePortas = numeroDePortas;
+    }
+    Carro.prototype.acelerar = function () {
+        this.velocidade = this.velocidade + 10;
+    };
+    Carro.prototype.parar = function () {
+        this.velocidade = 0;
+    };
+    Carro.prototype.velocidadeAtual = function () {
+        return this.velocidade;
+    };
+    return Carro;
+}());
