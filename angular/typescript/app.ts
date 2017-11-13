@@ -23,3 +23,24 @@ class Carro {
     }
 
 }
+
+class Concessionaria {
+
+    private endereco: string 
+    private listaDeCarros: any
+
+    constructor(endereco: string) {
+        this.endereco = endereco
+    }
+
+    public fornecerEndereco(): string {
+        return this.endereco
+    }
+    public mostrarListaCarros(): any {
+
+    }
+}
+
+let concessionaria = new Concessionaria('Av tiradentes')
+
+console.log(concessionaria)

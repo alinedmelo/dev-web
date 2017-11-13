@@ -16,3 +16,16 @@ var Carro = (function () {
     };
     return Carro;
 }());
+var Concessionaria = (function () {
+    function Concessionaria(endereco) {
+        this.endereco = endereco;
+    }
+    Concessionaria.prototype.fornecerEndereco = function () {
+        return this.endereco;
+    };
+    Concessionaria.prototype.mostrarListaCarros = function () {
+    };
+    return Concessionaria;
+}());
+var concessionaria = new Concessionaria('Av tiradentes');
+console.log(concessionaria);
