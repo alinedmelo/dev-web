@@ -1,17 +1,17 @@
-export class Carro {
-    // ParÃ¢metros do abjeto
+export default class Carro {
+    // Parâmetros do abjeto
     private modelo: string
     private numeroDePortas: number
     private velocidade: number = 0
 
-    //Construtor da classe = recebe os parÃ¢metros
+    //Construtor da classe = recebe os parâmetros
     constructor(modelo: string, numeroDePortas: number) {
 
         this.modelo = modelo
         this.numeroDePortas = numeroDePortas
     }
 
-    //MÃ©todos da classe
+    //Métodos da classe
     public acelerar(): void {
         this.velocidade = this.velocidade + 10
     }

@@ -6,7 +6,7 @@ var Pessoa = (function () {
         this.carroPreferido = carroPreferido;
     }
     Pessoa.prototype.dizerNome = function () {
-        return 'Nome: ' + this.nome;
+        return this.nome;
     };
     Pessoa.prototype.dizerCarroPreferido = function () {
         return this.carroPreferido;
@@ -19,4 +19,4 @@ var Pessoa = (function () {
     };
     return Pessoa;
 }());
-exports.Pessoa = Pessoa;
+exports.default = Pessoa;

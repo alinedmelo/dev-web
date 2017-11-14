@@ -1,4 +1,6 @@
-export class Concessionaria {
+import Carro from './Carro'
+
+export default class Concessionaria {
 
     private endereco: string
     private listaDeCarros: Array<Carro>

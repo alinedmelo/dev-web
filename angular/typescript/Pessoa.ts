@@ -1,4 +1,6 @@
-export class Pessoa {
+import Carro from  './Carro'
+
+export default class Pessoa {
 
     private nome: string
     private carroPreferido: string
@@ -10,7 +12,7 @@ export class Pessoa {
     }
 
     public dizerNome(): string {
-        return 'Nome: ' + this.nome
+        return this.nome
     }
     public dizerCarroPreferido(): string {
         return this.carroPreferido

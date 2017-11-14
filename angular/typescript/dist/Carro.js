@@ -17,4 +17,4 @@ var Carro = (function () {
     };
     return Carro;
 }());
-exports.Carro = Carro;
+exports.default = Carro;

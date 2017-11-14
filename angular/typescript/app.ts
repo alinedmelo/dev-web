@@ -1,7 +1,7 @@
 // Importanto as Classes
-import { Carro } from './Carro'
-import { Concessionaria } from './Concessionaria'
-import { Pessoa } from './Pessoa'
+import Carro from './Carro'
+import Concessionaria from './Concessionaria'
+import Pessoa from './Pessoa'
 
 /* Criar carros pora a lista */
 let carroA = new Carro('Ford GT', 2)

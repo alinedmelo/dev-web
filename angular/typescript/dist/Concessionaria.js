@@ -13,4 +13,4 @@ var Concessionaria = (function () {
     };
     return Concessionaria;
 }());
-exports.Concessionaria = Concessionaria;
+exports.default = Concessionaria;
