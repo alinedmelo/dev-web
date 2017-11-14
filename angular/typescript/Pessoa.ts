@@ -1,6 +1,6 @@
 import Carro from  './Carro'
 
-export default class Pessoa {
+class Pessoa {
 
     private nome: string
     private carroPreferido: string
@@ -25,3 +25,5 @@ export default class Pessoa {
     }
 
 }
+
+export default Pessoa

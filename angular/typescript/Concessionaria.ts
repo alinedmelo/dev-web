@@ -1,6 +1,6 @@
 import Carro from './Carro'
 
-export default class Concessionaria {
+class Concessionaria {
 
     private endereco: string
     private listaDeCarros: Array<Carro>
@@ -17,3 +17,5 @@ export default class Concessionaria {
         return this.listaDeCarros
     }
 }
+
+export default Concessionaria
